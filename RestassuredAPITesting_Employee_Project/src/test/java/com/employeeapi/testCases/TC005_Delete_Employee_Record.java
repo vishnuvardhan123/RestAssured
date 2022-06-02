@@ -79,21 +79,21 @@ public class TC005_Delete_Employee_Record extends TestBase{
 	void checkContentType()
 	{
 		String contentType = response.header("Content-Type");
-		Assert.assertEquals(contentType, "text/html; charset=UTF-8");
+		Assert.assertEquals(contentType, "application/json");
 	}
 
 	@Test
 	void checkserverType()
 	{
 		String serverType = response.header("Server");
-		Assert.assertEquals(serverType, "nginx/1.14.1");
+		Assert.assertEquals(serverType, "nginx");
 	}
 
 	@Test
 	void checkcontentEncoding()
 	{
 		String contentEncoding = response.header("Content-Encoding");
-		Assert.assertEquals(contentEncoding, "gzip");
+		Assert.assertEquals(contentEncoding, "null");
 
 	}
 
